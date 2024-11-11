@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoApp Dashboard</title>
+  <!-- Liens CSS (Bootstrap et styles personnalisés) -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Sidebar de Navigation -->
+  <div class="sidebar">
+    <div class="logo">PhotoApp</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">My Files</a></li>
+      <li><a href="#">Shared</a></li>
+      <li><a href="#">Deleted</a></li>
+    </ul>
+  </div>
+
+  <!-- Contenu Principal -->
+  <div class="main-content">
+    <header>
+      <h2>My Cloud</h2>
+      <p>Welcome, [User Name]! 👋</p>
+      <div class="actions">
+        <input type="text" placeholder="Search anything here">
+        <button class="btn btn-primary">+ Add New</button>
+      </div>
+    </header>
+
+    <!-- Section des Dossiers -->
+    <section class="folders">
+      <h3>All files</h3>
+      <div class="folder-list">
+        <!-- Exemple d'un Dossier -->
+        <div class="folder-card">
+          <h4>Documents</h4>
+          <p>Shared Users: 80 | Inside Files: 3985</p>
+          <span class="date">Sep 25, 2022, 13:25 PM</span>
+        </div>
+        <!-- Ajoute d'autres dossiers ici -->
+      </div>
+    </section>
+
+    <!-- Section des Fichiers Récents -->
+    <section class="recent-files">
+      <h3>Recent Files</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Shared Users</th>
+            <th>File Size</th>
+            <th>Last Modified</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Ligne exemple d'un fichier récent -->
+          <tr>
+            <td>Website Design.png</td>
+            <td>80</td>
+            <td>2.8 MB</td>
+            <td>Dec 13, 2022</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>
